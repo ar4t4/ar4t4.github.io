@@ -1,62 +1,92 @@
 const roles = ['Student', 'Photographer', 'Handsome'];
 
-// Get the element to update
 const element = document.querySelector(".typing");
 if (element) {
-    // The element with class "typing" was found
     console.log("Element found:", element);
-    element.textContent = ''; // Clear the initial content
+    element.textContent = ''; 
 } else {
-    // The element with class "typing" was not found
     console.log("Element not found.");
 }
 
-// Initialize index for roles array
 let index = 0;
-
-// Initialize index for characters in the current role
 let charIndex = 0;
-
-// Function to update the roles
 function updateRoles() {
-    // Get the current role
     const role = roles[index];
 
-    // Check if there are characters left to reveal
+   
     if (charIndex < role.length) {
-        // Get the next character
         const nextChar = role[charIndex];
 
-        // Append the next character to the element content
         element.textContent += nextChar;
-
-        // Increment character index for the next iteration
         charIndex++;
 
-        // Call updateRoles recursively for the next character
-        setTimeout(updateRoles, 100); // Adjust the delay as needed
+       
+        setTimeout(updateRoles, 100); 
     } else {
-        // Pause for 1 second after finishing the word
+      
         setTimeout(() => {
-            // Reset character index for the next role
+        
             charIndex = 0;
 
-            // Move to the next role
+            
             index++;
 
-            // If index exceeds the length of roles array, reset it to 0
+           
             if (index >= roles.length) {
                 index = 0;
             }
 
-            // Clear the element content before showing the next word
+           
             element.textContent = '';
 
-            // Call updateRoles recursively to start revealing the next word
+            
             updateRoles();
-        }, 1000); // Pause for 1 second
+        }, 1000); 
     }
 }
 
-// Call the updateRoles function to start revealing the first word
+/
 updateRoles();
+// function sendEmail(event) {
+   
+//   // Construct the mailto URL with subject and body parameters
+//  // var mailtoURL = 'mailto:asifrahman00010@gmail.com?subject=' + encodeURIComponent('Subject Here') + '&body=' + encodeURIComponent(body);
+//  //var name = document.getElementById("name").value;
+//   //  var email = document.getElementById("email").value;
+//     var body = document.getElementById("body").value;
+
+//   //  Open the default email client with the mailto URL
+//    //window.open();
+//    alert('Your message has been sent successfully');
+//    console.log(body);
+//     // Prevent the default action of the anchor tag
+//     event.preventDefault();
+
+//     // Show a success message
+   
+// }
+function sendEmail(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Retrieve the form input values
+    var name = document.getElementById("name").value;
+    var subject = document.getElementById("Subject").value;
+    var body = document.getElementById("body").value;
+
+    // Validate the input values (optional)
+    if (name.trim() === '' || subject.trim() === '' || body.trim() === '') {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    // Construct the mailto URL with subject and body parameters
+    var mailtoURL = 'mailto:asifrahman00010@gmail.com?subject=' + encodeURIComponent('subject') + '&body=' + encodeURIComponent(body);
+
+    // Open the default email client with the mailto URL
+    window.open(mailtoURL);
+
+    // Show a success message
+    alert('Your message has been sent successfully');
+}
+
