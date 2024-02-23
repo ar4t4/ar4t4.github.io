@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asif's Portfolio</title>
-    <!-- <link rel="stylesheet" href="/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -44,6 +44,10 @@
                 <i class="uil uil-scenery nav__icon"></i>Projects
               </a>
             </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Photography
+              </a>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="uil uil-message nav__icon"></i>Contact-Me
@@ -86,9 +90,25 @@
               >
                 <i class="uil uil-github-alt home__icon"></i>
               </a>
+              <a
+              href="https://www.facebook.com/asif.rahaman.5245961"
+              target="_blank"
+              class="home__social-icon"
+            >
+           
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+              <a
+              href="https://www.facebook.com/asif.rahaman.5245961"
+              target="_blank"
+              class="home__social-icon"
+            >
+           
+            <i class="fa-brands fa-instagram"></i>
+            </a>
             </div>
             <div class="home__img">
-              <!-- <svg
+              <svg
                 class="home__blob"
                 viewBox="0 0 200 187"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,16 +129,16 @@
                       129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                      -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
-                 
-                </g>
-              </svg> -->
-              <!-- <image
+                  <image
               class="home__blob-img"
               x="-100"
               y="-46"
-              xlink:href="/asif.jpg"
-            /> -->
-           <img src="/asif.jpg" alt="This is asif" class="home__blob-img" style="border-radius: 50%;">
+              xlink:href="img/asif.jpg"
+            />
+                </g>
+              </svg>
+             
+           <!-- <img src="/asif.jpg" alt="This is asif" class="home__blob-img" style="border-radius: 50%;"> -->
             </div>
             <div class="home__data">
               <h1 class="home__title">Hi, I'm Asif Rahman</h1>
@@ -153,7 +173,7 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
-          <img src="/asifback.jpg" alt="" class="about__img" />
+          <img src="img/asifback.jpg" alt="" class="about__img" />
 
           <div class="about__data">
             <p class="about__description">
@@ -546,7 +566,7 @@
           <div class="swiper-wrapper">
             <!-- ------------------------portfollio 1-------------------- -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="/employee.jpg" class="portfolio__img" />
+              <img src="img/employee.jpg" class="portfolio__img" />
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
@@ -574,7 +594,7 @@
 
             <!-- ------------------------portfollio 2-------------------- -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="/tictactoe.jpg" class="portfolio__img" />
+              <img src="img/tictactoe.jpg" class="portfolio__img" />
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Tic-Tac-Toe mobile application</h3>
@@ -599,47 +619,32 @@
             </div>
             <!-- ------------------------portfollio 3-------------------- -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio3.png" class="portfolio__img" />
+              <img src="img/tic-tac-toe.jpg" class="portfolio__img" />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Language Translator</h3>
+                <h3 class="portfolio__title">Tic-Tac-Toe(OOP)</h3>
                 <p class="portfolio__description">
-                  This language translator web app is a user-friendly tool built
-                  with HTML, CSS, and JavaScript. It leverages Google Translate
-                  API to seamlessly translate text between multiple languages.
-                  The app features a simple interface, ensuring smooth
-                  performance across devices..
+                 This is a simple Tic-Tac-Toe game developed using c++. The game is designed using Object-Oriented Programming (OOP) principles, providing a clean and modular codebase. The game features a simple and intuitive user interface, allowing users to play the game against the computer or against another player.
                 </p>
                 <a
-                  href="https://github.com/Venkateeshh/Js-Language-Translator"
+                  href="https://github.com/ar4t4/tictactoe"
                   class="button button--flex button--small portfolio__button"
                 >
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://venkateeshh.github.io/Js-Language-Translator/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                
               </div>
             </div>
 
             <!-- ------------------------portfollio 4-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio4.png" class="portfolio__img" />
+            <!-- <div class="portfolio__content grid swiper-slide">
+              <img src="" class="portfolio__img" />
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Sorting Visualizer</h3>
                 <p class="portfolio__description">
-                  Sorting Visualizer is a Java-based project that allows users
-                  to visualize various sorting algorithms in action using a
-                  Graphical User Interface (GUI). It provides an interactive and
-                  educational way to understand how different sorting algorithms
-                  work by visually demonstrating their step-by-step sorting
-                  process.
+                
                 </p>
                 <a
                   href="https://github.com/Venkateeshh/Sorting-Visualizer"
@@ -648,15 +653,9 @@
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/posts/venkatesh-kamath-_algorithmdesign-sortingvisualizer-javaprojects-activity-7095437035125043200-fWDl?utm_source=share&utm_medium=member_desktop"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+               
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- add arrows -->
@@ -670,7 +669,56 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
+ <!--===================== Hobbies=====================-->
+ <section id="work" class="work">
+  <div class="container">
+      <h1 class="section-heading"><span>MY RECENT PHOTOGRAPHY</span></h1>
+      <div class="card-wrapper">
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="/img/pic 1.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic 1.jpg" alt="">
+          </div>
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="./img/pic 2.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic 2.jpg" alt="">
+          </div>
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="./img/pic3.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic3.jpg" alt="">
+          </div>
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="./img/pic 4.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic 4.jpg" alt="">
+          </div>
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="./img/pic5.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic5.jpg" alt="">
+          </div>
+          <div class="card">
+              <div class="overlay">
+                  <!-- <span>Category</span> -->
+                  <a href="./img/pic6.jpg">Click to see</a>
+              </div>
+              <img src="./img/pic6.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</section>
       <!--===================== Contact Me =====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact Me</h2>
@@ -804,9 +852,11 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-    <script src="/first.js"></script>
-    <!-- <script type="text/javascript" src="/swiper-bundle.min.js"></script> -->
+    
+    <script type="text/javascript" src="/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ad174b8664.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="/first.js"></script>
    
   </body>
 </html>

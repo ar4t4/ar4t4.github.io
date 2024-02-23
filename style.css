@@ -23,7 +23,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-  /*========= Font and typography ===========*/
+  /*========= Font===========*/
   --body-font: "Poppins", sans-serif;
 
   --big-font-size: 2rem;
@@ -54,6 +54,15 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+   /*============== extra color=============*/
+
+   --primary:#3DCFD3;
+   --dark:#161616;
+   --pure:#FFFFFF;
+   --ternary:#898989;
+   --light:#F2F2F2;
+   --secondary:#070606;
+
 }
 
 /* Font Size for larger devices */
@@ -152,7 +161,7 @@ img {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 900px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -167,7 +176,8 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  
 }
 
 .nav {
@@ -207,6 +217,76 @@ img {
   from { width: 0; }
   to { width: 100%; }
 } */
+
+
+/*================= HOBBY ===============*/
+
+.section-heading{
+  color:var(--secondary); 
+  text-align: center;
+  margin-bottom:3rem;
+  line-height: 0.5;
+}
+.section-heading span{
+   color:blueviolet;
+}
+.section-heading + p{
+  color:var(--ternary);
+  font-family:'Lato', sans-serif;
+  margin-bottom:8rem;
+   text-align: center;
+}
+section.work{
+  /* background:#6a6a7c;*/
+  margin-top: 5rem;
+} 
+section.work .card-wrapper{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:1rem;
+}
+section.work .card-wrapper .card{
+  position:relative;
+  height:250px;
+
+}
+section.work .card-wrapper .card .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(61, 207, 211,0.9);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  color:var(--light);
+  opacity:0;
+  transition:all .3s ease;
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -ms-transition:all .3s ease;
+  -o-transition:all .3s ease;
+}
+section.work .card-wrapper .card:hover .overlay{
+  opacity:1;
+}
+
+section.work .card-wrapper .card .overlay a{
+  color:var(--secondary);
+  text-decoration: none;
+}
+section.work .card-wrapper .card img{
+  height:100%;
+  width:100%;
+}
+
+
+/**********************************************
+        shuru
+ **********************************************/
+
 
 .tag {
 font-size: 2rem;
@@ -354,9 +434,7 @@ font-size: 2rem;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
-.home__description {
-  /* margin-bottom: var(--mb-1); */
-}
+                  
 
 .portfolio__scroll {
   display: flex;
