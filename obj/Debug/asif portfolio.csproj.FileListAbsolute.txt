@@ -1,0 +1,73 @@
+E:\portfolio\asif portfolio\bin\asif portfolio.dll.config
+E:\portfolio\asif portfolio\bin\asif portfolio.dll
+E:\portfolio\asif portfolio\bin\asif portfolio.pdb
+E:\portfolio\asif portfolio\bin\roslyn\csc.exe
+E:\portfolio\asif portfolio\bin\roslyn\csc.exe.config
+E:\portfolio\asif portfolio\bin\roslyn\csc.rsp
+E:\portfolio\asif portfolio\bin\roslyn\csi.exe
+E:\portfolio\asif portfolio\bin\roslyn\csi.exe.config
+E:\portfolio\asif portfolio\bin\roslyn\csi.rsp
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.Managed.Core.targets
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\portfolio\asif portfolio\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.AppContext.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Collections.Immutable.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Console.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Globalization.Calendars.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.IO.Compression.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.IO.FileSystem.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Net.Http.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Net.Sockets.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Reflection.Metadata.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.ValueTuple.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Xml.XmlDocument.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Xml.XPath.dll
+E:\portfolio\asif portfolio\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\portfolio\asif portfolio\bin\roslyn\vbc.exe
+E:\portfolio\asif portfolio\bin\roslyn\vbc.exe.config
+E:\portfolio\asif portfolio\bin\roslyn\vbc.rsp
+E:\portfolio\asif portfolio\bin\roslyn\VBCSCompiler.exe
+E:\portfolio\asif portfolio\bin\roslyn\VBCSCompiler.exe.config
+E:\portfolio\asif portfolio\bin\Antlr3.Runtime.dll
+E:\portfolio\asif portfolio\bin\AspNet.ScriptManager.jQuery.dll
+E:\portfolio\asif portfolio\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\portfolio\asif portfolio\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\portfolio\asif portfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\portfolio\asif portfolio\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\portfolio\asif portfolio\bin\Microsoft.ScriptManager.WebForms.dll
+E:\portfolio\asif portfolio\bin\Microsoft.Web.Infrastructure.dll
+E:\portfolio\asif portfolio\bin\Newtonsoft.Json.dll
+E:\portfolio\asif portfolio\bin\System.Web.Optimization.dll
+E:\portfolio\asif portfolio\bin\WebGrease.dll
+E:\portfolio\asif portfolio\bin\System.Web.Optimization.xml
+E:\portfolio\asif portfolio\bin\Newtonsoft.Json.xml
+E:\portfolio\asif portfolio\bin\Antlr3.Runtime.pdb
+E:\portfolio\asif portfolio\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\portfolio\asif portfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\portfolio\asif portfolio\obj\Debug\asif portfolio.csproj.AssemblyReference.cache
+E:\portfolio\asif portfolio\obj\Debug\asif portfolio.csproj.CoreCompileInputs.cache
+E:\portfolio\asif portfolio\obj\Debug\asif portfolio.csproj.CopyComplete
+E:\portfolio\asif portfolio\obj\Debug\asif portfolio.dll
+E:\portfolio\asif portfolio\obj\Debug\asif portfolio.pdb
