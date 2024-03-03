@@ -9,6 +9,18 @@
         .auto-style1 {
             color: #00CC00;
         }
+        .action-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.action-button.reply {
+    background-color: green;
+}
     </style>
 </head>
 <body>
@@ -23,8 +35,8 @@
                     <asp:BoundField DataField="Date" HeaderText="Date" />
                      <asp:TemplateField HeaderText="Actions">
             <ItemTemplate>
-                <asp:Button runat="server" CommandName="Delete" Text="Delete" OnClientClick="return confirm('Are you sure you want to delete this row?');" />
-                 <asp:Button runat="server" CommandName="Reply" Text="Reply" OnClick="ReplyButton_Click" />
+                <asp:Button runat="server" CommandName="Delete" Text="Delete" OnClientClick="return confirm('Are you sure you want to delete this row?');" CssClass="action-button" />
+                 <asp:Button runat="server" CommandName="Reply" Text="Reply" OnClick="ReplyButton_Click" CssClass="action-button reply" />
             </ItemTemplate>
         </asp:TemplateField>
                 </Columns>

@@ -1291,3 +1291,11 @@ font-size: 2rem;
     bottom: -4.5rem;
   }
 }
+home__blob-img {
+    width: 200px; /* Adjust width as needed */
+    height: 187px; /* Adjust height as needed */
+    /* Add any other CSS properties to mimic the appearance of the SVG */
+    /* Example properties */
+    border-radius: 50%; /* Make the image round */
+    background-color: #007bff; /* Set a background color */
+}

@@ -109,7 +109,7 @@
             <i class="fa-brands fa-instagram"></i>
             </a>
             </div>
-            <div class="home__img">
+           <%-- <div class="home__img">
               <svg
                 class="home__blob"
                 viewBox="0 0 200 187"
@@ -138,7 +138,12 @@
               xlink:href="img/asif.jpg"
             />
                 </g>
-              </svg>
+              </svg>--%>
+
+              <div class="home__img">
+    <!-- Existing SVG and image code for the background -->
+ <asp:Image ID="Image1" runat="server" CssClass="home__blob-img" Style="width: 400px; height: 387px;border-radius:50%;" />
+
              
            <!-- <img src="/asif.jpg" alt="This is asif" class="home__blob-img" style="border-radius: 50%;"> -->
             </div>
@@ -178,9 +183,10 @@
           <img src="img/asifback.jpg" alt="" class="about__img" />
 
           <div class="about__data">
-            <p class="about__description">
+            <%--<p class="about__description">
               I'm a third-year CSE undergraduate, passionate about technology and an avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization. I'm very much passionate to learn new stuff that interests me and can help me to get better.
-            </p>
+            </p>--%>
+              <p id="aboutDescription" class="about__description"></p>
 
             <div class="about__info">
               <div>
