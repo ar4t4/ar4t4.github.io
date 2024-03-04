@@ -87,7 +87,8 @@
             height: 34px;
         }
         .auto-style9 {
-            width: 259px;
+            width: 257px;
+            height: 48px;
         }
         .auto-style10 {
             width: 265px;
@@ -95,7 +96,15 @@
         .auto-style11 {
             width: 275px;
         }
-    </style>
+        .auto-style12 {
+            width: 180%;
+            height: 151px;
+            margin-left: 763px;
+        }
+        .auto-style13 {
+            height: 102px;
+        }
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -115,13 +124,28 @@
      <h1>Admin Dashboard</h1>
      <ul class="dashboard-links">
          <li>
-             <h4 class="auto-style9"><asp:Button ID="btnManageUsers" runat="server" Text="Show Messages" OnClick="btnManageUsers_Click" BackColor="#3333FF" Height="48px" style="color: #FFFFFF; font-weight: 700; font-size: large" Width="252px" /></h4>
+           
+             <h4 class="auto-style9"><asp:Button ID="btnManageUsers" runat="server" Text="Show Messages" OnClick="btnManageUsers_Click" BackColor="#3333FF" Height="48px" style="color: #FFFFFF; font-weight: 700; font-size: large" Width="252px" />
+                 
+                 <table cellpadding="2" class="auto-style12">
+                     <tr>
+                         <td class="auto-style13">
+                             <asp:TextBox ID="txtAboutContent" runat="server" TextMode="MultiLine" Rows="4" Columns="50" Height="98px" Visible="False"></asp:TextBox>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <asp:Button ID="btnSaveAbout" runat="server" Text="Save" OnClick="btnSaveAbout_Click" Visible="False"  />
+                         </td>
+                     </tr>
+                 </table>
+             </h4>
          </li>
-         <li class="auto-style10">&nbsp;<asp:Button ID="btnViewStatistics" runat="server" Text="Edit Skills" OnClick="btnViewStatistics_Click" BackColor="#3333FF" Height="47px" style="font-size: large; color: #FFFFFF; font-weight: 700" Width="254px" CssClass="auto-style6" /></li>
+         <li class="auto-style10">&nbsp;<asp:Button ID="btnViewStatistics" runat="server" Text="Edit Skills" OnClick="btnViewStatistics_Click" BackColor="#3333FF" Height="47px" style="font-size: large; color: #FFFFFF; font-weight: 700" Width="249px" CssClass="auto-style6" /></li>
          <li class="auto-style11">&nbsp;<asp:Button ID="btnEditContent" runat="server" Text="Edit About" OnClick="btnEditContent_Click" BackColor="#3333FF" Height="43px" style="font-size: large; color: #FFFFFF; font-weight: 700; margin-left: 0px" Width="252px" />
      </ul>
  </div>
-
+               
 
         
     <div>
@@ -157,11 +181,7 @@
 
        
     </div>
-        <div id="divEditAbout" runat="server" style="display: none;">
-    <asp:TextBox ID="txtAboutContent" runat="server" TextMode="MultiLine" Rows="4" Columns="50"></asp:TextBox>
-    <br />
-    <asp:Button ID="btnSaveAbout" runat="server" Text="Save" OnClick="btnSaveAbout_Click" />
-</div>
+       
     </form>
 
     </body>

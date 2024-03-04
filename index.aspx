@@ -186,16 +186,23 @@
             <%--<p class="about__description">
               I'm a third-year CSE undergraduate, passionate about technology and an avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization. I'm very much passionate to learn new stuff that interests me and can help me to get better.
             </p>--%>
-              <p id="aboutDescription" class="about__description"></p>
+           <%--   <p id="aboutDescription" class="about__description"></p>--%>
+              <asp:Label ID="aboutDescription" runat="server" Text="asif" Visible="false"></asp:Label>
+              <br />
+<br />
+              <br />
+
 
             <div class="about__info">
               <div>
-                <span class="about__info-title">1400+</span>
+                <%--<span class="about__info-title">1400+</span>--%>
+                  <asp:Label ID="cf" runat="server" Font-Size="X-Large" Font-Bold="true" ></asp:Label>
                 <span class="about__info-name">Codeforces <br />Rating</span>
               </div>
 
               <div>
-                <span class="about__info-title">01+</span>
+               <%-- <span class="about__info-title">01+</span>--%>
+                     <asp:Label ID="f1" runat="server" Text="02+" Font-Size="X-Large" Font-Bold="true" style="margin-left: 0.5cm;" ></asp:Label>
                 <span class="about__info-name"
                   >Frontend <br />
                   Projects</span
@@ -203,7 +210,8 @@
               </div>
 
               <div>
-                <span class="about__info-title">01+</span>
+               <%-- <span class="about__info-title">01+</span>--%>
+                     <asp:Label ID="f2" runat="server" Text="01+" Font-Size="X-Large" Font-Bold="true"  style="margin-left: 0.5cm;"></asp:Label>
                 <span class="about__info-name">Months <br />experience</span>
               </div>
             </div>

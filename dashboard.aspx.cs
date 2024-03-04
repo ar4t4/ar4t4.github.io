@@ -41,13 +41,22 @@ namespace asif_portfolio
 
         protected void btnEditContent_Click(object sender, EventArgs e)
         {
+            string aboutContent = RetrieveAboutContentFromDatabase();
 
+            // Display the retrieved content in a TextBox for editing
+            txtAboutContent.Text = aboutContent;
+
+            // Show the editing section
+            txtAboutContent.Visible = true;
+            btnSaveAbout.Visible = true;
 
 
         }
 
         protected void btnViewStatistics_Click(object sender, EventArgs e)
         {
+
+            Response.Redirect("skills.aspx");
 
         }
 
@@ -115,6 +124,90 @@ namespace asif_portfolio
 
             }
 
+
+        protected string RetrieveAboutContentFromDatabase()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+            string aboutContent = "";
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    // Define the SQL query to retrieve the "about" content
+                    string query = "SELECT About FROM about";
+        
+            // Create and configure a SqlCommand object
+            using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters if necessary (e.g., if you're filtering by ID)
+                      //  command.Parameters.AddWithValue("@Id", /*Provide the ID of the about content you want to retrieve*/);
+
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the command and retrieve the scalar result
+                        aboutContent = command.ExecuteScalar() as string;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions (e.g., log the error, display an error message)
+                // For simplicity, this example just throws the exception again
+                throw ex;
+            }
+
+            return aboutContent;
+        }
+
+        protected void btnSaveAbout_Click(object sender, EventArgs e)
+        {
+
+
+            string updatedContent = txtAboutContent.Text;
+
+            // Define your SQL query to update the about content
+            string query = "UPDATE about SET About = @AboutContent";
+
+            // Establish a connection to the database
+            string connectionString = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Create a SqlCommand object with the query and connection
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Add parameters
+                    command.Parameters.AddWithValue("@AboutContent", updatedContent);
+
+                    try
+                    {
+                        // Open the connection
+                        connection.Open();
+
+                        // Execute the query
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        // Check if any rows were affected
+                        if (rowsAffected > 0)
+                        {
+                            // Display success message
+                            Response.Write("<script>alert('About content updated successfully.');</script>");
+                        }
+                        else
+                        {
+                            // Display error message if no rows were affected
+                            Response.Write("<script>alert('Failed to update about content.');</script>");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle exceptions
+                        Response.Write("<script>alert('An error occurred: " + ex.Message + "');</script>");
+                    }
+                }
+            }
+        }
     }
         //void BindGridView()
         //{
@@ -129,5 +222,6 @@ namespace asif_portfolio
         //    connection.Close();
         //}
 
+       
       
     }

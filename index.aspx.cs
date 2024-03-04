@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.UI;
@@ -12,14 +13,17 @@ using System.Web.UI.WebControls;
 
 namespace asif_portfolio
 {
+    
     public partial class index : System.Web.UI.Page
     {
-        protected HtmlGenericControl aboutDescription;
+        string x, y, z;
+
 
         protected string StrBase64 { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            aboutDescription = (HtmlGenericControl)this.FindControl("aboutDescription");
+            //aboutDescription = (HtmlGenericControl)this.FindControl("aboutDescription");
+            LoadAboutContent();
             string cs = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
@@ -52,6 +56,50 @@ namespace asif_portfolio
                 con.Close();
 
             }
+            if (!IsPostBack)
+            {
+
+                //if (!string.IsNullOrEmpty(Request.QueryString["skill"]))
+                //{
+                //    // Get the skill value from the query string
+                //    string skillValue = Request.QueryString["skill"];
+
+                //    // Update the text of the label
+                //    cf.Text = skillValue;
+                //    x = cf.Text;
+                //}
+
+
+                //if (!string.IsNullOrEmpty(Request.QueryString["skill1"]))
+                //{
+                //    // Get the skill value from the query string
+                //    string skillValue1 = Request.QueryString["skill1"];
+
+                //    // Update the text of the label
+                //    f1.Text = skillValue1;
+                //}
+                
+                HttpCookie cookie1 = Request.Cookies["t1"];
+                HttpCookie cookie = Request.Cookies["t2"];
+                if (cookie != null)
+                {
+                    f1.Text = cookie.Value;
+                    
+                } 
+                if (cookie1 != null)
+                {
+                    cf.Text = cookie1.Value;
+                    
+                }
+
+
+                if (Session["t3"] != null)
+                {
+                    f2.Text = Session["t3"].ToString();
+                }
+                
+                
+            }
 
         }
 
@@ -59,8 +107,8 @@ namespace asif_portfolio
 
         protected void sendButton_Click(object sender, EventArgs e)
         {
-            
-            if (!IsValid) 
+
+            if (!IsValid)
             {
                 Response.Write("<script>alert('message is not valid ');</script>");
                 return;
@@ -72,12 +120,12 @@ namespace asif_portfolio
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
-                string sql = "INSERT INTO Message (Email, Subject, Message,date) VALUES ('" + email.Text + "', '" + subject.Text + "', '" + message.Text + "','" + DateTime.Now+ "')";
+                string sql = "INSERT INTO Message (Email, Subject, Message,date) VALUES ('" + email.Text + "', '" + subject.Text + "', '" + message.Text + "','" + DateTime.Now + "')";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.ExecuteNonQuery();
                 connection.Close();
                 Response.Write("<script>alert('message sent succesfully');</script>");
-           
+
 
             }
         }
@@ -92,18 +140,19 @@ namespace asif_portfolio
                 {
                     connection.Open();
                     object result = command.ExecuteScalar();
+                    Label aboutDescription = (Label)Page.FindControl("aboutDescription");
                     if (result != null)
                     {
-                        aboutDescription.InnerText = result.ToString();
+                        aboutDescription.Text = result.ToString();
+                        aboutDescription.Visible = true; // Make the label visible
                     }
-                    connection.Close();
                 }
             }
+
+
+
+
         }
-
-
-
-
     }
 
 }

@@ -51,6 +51,24 @@ namespace asif_portfolio
         protected global::System.Web.UI.WebControls.Button btnManageUsers;
 
         /// <summary>
+        /// txtAboutContent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAboutContent;
+
+        /// <summary>
+        /// btnSaveAbout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveAbout;
+
+        /// <summary>
         /// btnViewStatistics control.
         /// </summary>
         /// <remarks>
@@ -112,32 +130,5 @@ namespace asif_portfolio
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl2;
-
-        /// <summary>
-        /// divEditAbout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divEditAbout;
-
-        /// <summary>
-        /// txtAboutContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAboutContent;
-
-        /// <summary>
-        /// btnSaveAbout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveAbout;
     }
 }
